@@ -1,0 +1,4768 @@
+{
+  "schema_version": "1.0.0",
+  "id": "demo-manufacturer-a",
+  "name": "First U.S. production footprint",
+  "company": "Demo Manufacturer A",
+  "origin": "Asia · hypothetical",
+  "is_sample": true,
+  "created_at": "2026-10-01T12:00:00.000Z",
+  "updated_at": "2026-10-01T12:00:00.000Z",
+  "product": {
+    "id": "product-mounting",
+    "name": "Industrial mounting assemblies",
+    "description": "A fictional, non-regulated discrete product family. All operating inputs are synthetic.",
+    "process_steps": [
+      "Metal forming",
+      "Surface finishing",
+      "Assembly",
+      "Inspection",
+      "Packaging"
+    ]
+  },
+  "planning_start": "2027-01-01",
+  "budget": {
+    "value": 8000000,
+    "unit": "USD",
+    "assumption_id": "a-budget",
+    "source_id": "src-demo",
+    "period": "2026 planning assumption",
+    "geography": "US"
+  },
+  "target_lead_time": {
+    "value": 20,
+    "unit": "days",
+    "assumption_id": "a-target-lead",
+    "source_id": "src-demo",
+    "period": "2026 planning assumption",
+    "geography": "US"
+  },
+  "discount_rate": {
+    "value": 8,
+    "unit": "percent",
+    "assumption_id": "a-discount",
+    "source_id": "src-demo",
+    "period": "2026 planning assumption",
+    "geography": "US"
+  },
+  "demand": [
+    {
+      "value": 100000,
+      "unit": "units",
+      "assumption_id": "a-demand-1",
+      "source_id": "src-demo",
+      "period": "2026 planning assumption",
+      "geography": "US"
+    },
+    {
+      "value": 100000,
+      "unit": "units",
+      "assumption_id": "a-demand-2",
+      "source_id": "src-demo",
+      "period": "2026 planning assumption",
+      "geography": "US"
+    },
+    {
+      "value": 100000,
+      "unit": "units",
+      "assumption_id": "a-demand-3",
+      "source_id": "src-demo",
+      "period": "2026 planning assumption",
+      "geography": "US"
+    },
+    {
+      "value": 100000,
+      "unit": "units",
+      "assumption_id": "a-demand-4",
+      "source_id": "src-demo",
+      "period": "2026 planning assumption",
+      "geography": "US"
+    },
+    {
+      "value": 100000,
+      "unit": "units",
+      "assumption_id": "a-demand-5",
+      "source_id": "src-demo",
+      "period": "2026 planning assumption",
+      "geography": "US"
+    }
+  ],
+  "bom": [
+    {
+      "id": "bom-01",
+      "name": "Mounting plate",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Metal forming",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-0-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 14,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-0-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-02",
+      "name": "Support bracket",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Metal forming",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-1-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 10,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-1-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-03",
+      "name": "Fastener kit",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Assembly",
+      "strategy": "buy",
+      "quantity": {
+        "value": 4,
+        "unit": "units",
+        "assumption_id": "a-bom-2-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 1.5,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-2-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-04",
+      "name": "Rubber foot",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Assembly",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-3-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 2,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-3-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-05",
+      "name": "Cover panel",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Assembly",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-4-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 8,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-4-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-06",
+      "name": "Spacer",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Assembly",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-5-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 3,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-5-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-07",
+      "name": "Locking pin",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Assembly",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-6-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 2,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-6-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-08",
+      "name": "Spring",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Assembly",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-7-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 2,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-7-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-09",
+      "name": "Adjustment knob",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "Asia",
+      "process": "Assembly",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-8-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 4,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-8-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-10",
+      "name": "Protective coating",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "US",
+      "process": "Packaging / finishing",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-9-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 4,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-9-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-11",
+      "name": "Label",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "US",
+      "process": "Packaging / finishing",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-10-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 0.5,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-10-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    },
+    {
+      "id": "bom-12",
+      "name": "Carton",
+      "specification": "Illustrative specification; qualification required",
+      "origin": "US",
+      "process": "Packaging / finishing",
+      "strategy": "buy",
+      "quantity": {
+        "value": 1,
+        "unit": "units",
+        "assumption_id": "a-bom-11-quantity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "unit_cost": {
+        "value": 3.5,
+        "unit": "USD/unit",
+        "assumption_id": "a-bom-11-cost",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "cost_basis": "per_good_unit"
+    }
+  ],
+  "demand_zones": [
+    {
+      "id": "zone-1",
+      "name": "Midwest East",
+      "state_fips": "39",
+      "share": {
+        "value": 20,
+        "unit": "percent",
+        "assumption_id": "a-zone-0-share",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "annual_units": [
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-0-units-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-0-units-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-0-units-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-0-units-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-0-units-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ]
+    },
+    {
+      "id": "zone-2",
+      "name": "Midwest Central",
+      "state_fips": "18",
+      "share": {
+        "value": 15,
+        "unit": "percent",
+        "assumption_id": "a-zone-1-share",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "annual_units": [
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-1-units-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-1-units-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-1-units-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-1-units-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-1-units-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ]
+    },
+    {
+      "id": "zone-3",
+      "name": "South Central",
+      "state_fips": "48",
+      "share": {
+        "value": 15,
+        "unit": "percent",
+        "assumption_id": "a-zone-2-share",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "annual_units": [
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-2-units-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-2-units-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-2-units-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-2-units-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 15000,
+          "unit": "units",
+          "assumption_id": "a-zone-2-units-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ]
+    },
+    {
+      "id": "zone-4",
+      "name": "Southeast",
+      "state_fips": "13",
+      "share": {
+        "value": 10,
+        "unit": "percent",
+        "assumption_id": "a-zone-3-share",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "annual_units": [
+        {
+          "value": 10000,
+          "unit": "units",
+          "assumption_id": "a-zone-3-units-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 10000,
+          "unit": "units",
+          "assumption_id": "a-zone-3-units-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 10000,
+          "unit": "units",
+          "assumption_id": "a-zone-3-units-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 10000,
+          "unit": "units",
+          "assumption_id": "a-zone-3-units-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 10000,
+          "unit": "units",
+          "assumption_id": "a-zone-3-units-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ]
+    },
+    {
+      "id": "zone-5",
+      "name": "Northeast",
+      "state_fips": "36",
+      "share": {
+        "value": 20,
+        "unit": "percent",
+        "assumption_id": "a-zone-4-share",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "annual_units": [
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-4-units-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-4-units-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-4-units-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-4-units-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-4-units-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ]
+    },
+    {
+      "id": "zone-6",
+      "name": "West",
+      "state_fips": "06",
+      "share": {
+        "value": 20,
+        "unit": "percent",
+        "assumption_id": "a-zone-5-share",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "annual_units": [
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-5-units-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-5-units-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-5-units-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-5-units-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 20000,
+          "unit": "units",
+          "assumption_id": "a-zone-5-units-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "scenario-import",
+      "type": "import",
+      "name": "Continue importing",
+      "launch_date": "2027-01-01",
+      "ramp": [
+        {
+          "value": 0,
+          "unit": "percent",
+          "assumption_id": "a-import-ramp-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 0,
+          "unit": "percent",
+          "assumption_id": "a-import-ramp-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 0,
+          "unit": "percent",
+          "assumption_id": "a-import-ramp-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 0,
+          "unit": "percent",
+          "assumption_id": "a-import-ramp-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 0,
+          "unit": "percent",
+          "assumption_id": "a-import-ramp-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ],
+      "capacity": {
+        "value": 120000,
+        "unit": "units",
+        "assumption_id": "a-import-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "ex_works": {
+        "value": 75,
+        "unit": "USD/unit",
+        "assumption_id": "a-import-ex-works",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "materials": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-import-materials",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "labor_hours": {
+        "value": 0,
+        "unit": "hours/unit",
+        "assumption_id": "a-import-labor-hours",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "wage": {
+        "value": 30,
+        "unit": "USD/hour",
+        "assumption_id": "a-import-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "energy_use": {
+        "value": 0,
+        "unit": "kWh/unit",
+        "assumption_id": "a-import-energy-use",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "energy_rate": {
+        "value": 0.09,
+        "unit": "USD/kWh",
+        "assumption_id": "a-import-energy-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "yield": {
+        "value": 0.98,
+        "unit": "ratio",
+        "assumption_id": "a-import-yield",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "international_freight": {
+        "value": 10,
+        "unit": "USD/unit",
+        "assumption_id": "a-import-intl-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "domestic_freight": {
+        "value": 5,
+        "unit": "USD/unit",
+        "assumption_id": "a-import-domestic-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "insurance_brokerage": {
+        "value": 1,
+        "unit": "USD/unit",
+        "assumption_id": "a-import-insurance",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "duty_rate": {
+        "value": 10,
+        "unit": "percent",
+        "assumption_id": "a-import-duty-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "customs_value": {
+        "value": 75,
+        "unit": "USD/unit",
+        "assumption_id": "a-import-customs-value",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "specific_duty": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-import-specific-duty",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "duty_review_date": "2026-10-01",
+      "annual_fixed": {
+        "value": 200000,
+        "unit": "USD",
+        "assumption_id": "a-import-fixed",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "equipment": {
+        "value": 0,
+        "unit": "USD",
+        "assumption_id": "a-import-equipment",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "tooling": {
+        "value": 0,
+        "unit": "USD",
+        "assumption_id": "a-import-tooling",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "setup": {
+        "value": 0,
+        "unit": "USD",
+        "assumption_id": "a-import-setup",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "transition": {
+        "value": 0,
+        "unit": "USD",
+        "assumption_id": "a-import-transition",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capital_year": 0,
+      "quote": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-import-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 0,
+        "unit": "units",
+        "assumption_id": "a-import-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 75,
+        "unit": "days",
+        "assumption_id": "a-import-lead-time",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "inventory_days": {
+        "value": 75,
+        "unit": "days",
+        "assumption_id": "a-import-inventory-days",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "carrying_rate": {
+        "value": 6,
+        "unit": "percent",
+        "assumption_id": "a-import-carrying-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "quote_includes": {
+        "ex_works": false,
+        "materials": false,
+        "labor": false,
+        "energy": false,
+        "international_freight": false,
+        "domestic_freight": false,
+        "duty": false,
+        "overhead": false
+      },
+      "variable_basis": "per_good_unit"
+    },
+    {
+      "id": "scenario-assembly",
+      "type": "assembly",
+      "name": "U.S. assembly",
+      "launch_date": "2027-01-01",
+      "ramp": [
+        {
+          "value": 50,
+          "unit": "percent",
+          "assumption_id": "a-assembly-ramp-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 80,
+          "unit": "percent",
+          "assumption_id": "a-assembly-ramp-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-assembly-ramp-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-assembly-ramp-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-assembly-ramp-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ],
+      "capacity": {
+        "value": 120000,
+        "unit": "units",
+        "assumption_id": "a-assembly-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "ex_works": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-assembly-ex-works",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "materials": {
+        "value": 55,
+        "unit": "USD/unit",
+        "assumption_id": "a-assembly-materials",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "labor_hours": {
+        "value": 0.4,
+        "unit": "hours/unit",
+        "assumption_id": "a-assembly-labor-hours",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "wage": {
+        "value": 30,
+        "unit": "USD/hour",
+        "assumption_id": "a-assembly-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "energy_use": {
+        "value": 5,
+        "unit": "kWh/unit",
+        "assumption_id": "a-assembly-energy-use",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "energy_rate": {
+        "value": 0.09,
+        "unit": "USD/kWh",
+        "assumption_id": "a-assembly-energy-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "yield": {
+        "value": 0.98,
+        "unit": "ratio",
+        "assumption_id": "a-assembly-yield",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "international_freight": {
+        "value": 4,
+        "unit": "USD/unit",
+        "assumption_id": "a-assembly-intl-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "domestic_freight": {
+        "value": 5,
+        "unit": "USD/unit",
+        "assumption_id": "a-assembly-domestic-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "insurance_brokerage": {
+        "value": 1,
+        "unit": "USD/unit",
+        "assumption_id": "a-assembly-insurance",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "duty_rate": {
+        "value": 10,
+        "unit": "percent",
+        "assumption_id": "a-assembly-duty-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "customs_value": {
+        "value": 25,
+        "unit": "USD/unit",
+        "assumption_id": "a-assembly-customs-value",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "specific_duty": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-assembly-specific-duty",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "duty_review_date": "2026-10-01",
+      "annual_fixed": {
+        "value": 600000,
+        "unit": "USD",
+        "assumption_id": "a-assembly-fixed",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "equipment": {
+        "value": 1500000,
+        "unit": "USD",
+        "assumption_id": "a-assembly-equipment",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "tooling": {
+        "value": 200000,
+        "unit": "USD",
+        "assumption_id": "a-assembly-tooling",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "setup": {
+        "value": 300000,
+        "unit": "USD",
+        "assumption_id": "a-assembly-setup",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "transition": {
+        "value": 0,
+        "unit": "USD",
+        "assumption_id": "a-assembly-transition",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capital_year": 0,
+      "quote": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-assembly-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 0,
+        "unit": "units",
+        "assumption_id": "a-assembly-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 25,
+        "unit": "days",
+        "assumption_id": "a-assembly-lead-time",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "inventory_days": {
+        "value": 30,
+        "unit": "days",
+        "assumption_id": "a-assembly-inventory-days",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "carrying_rate": {
+        "value": 6,
+        "unit": "percent",
+        "assumption_id": "a-assembly-carrying-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "quote_includes": {
+        "ex_works": false,
+        "materials": false,
+        "labor": false,
+        "energy": false,
+        "international_freight": false,
+        "domestic_freight": false,
+        "duty": false,
+        "overhead": false
+      },
+      "variable_basis": "per_good_unit"
+    },
+    {
+      "id": "scenario-contract",
+      "type": "contract",
+      "name": "Contract manufacturing",
+      "launch_date": "2027-01-01",
+      "ramp": [
+        {
+          "value": 50,
+          "unit": "percent",
+          "assumption_id": "a-contract-ramp-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 80,
+          "unit": "percent",
+          "assumption_id": "a-contract-ramp-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-contract-ramp-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-contract-ramp-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-contract-ramp-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ],
+      "capacity": {
+        "value": 120000,
+        "unit": "units",
+        "assumption_id": "a-contract-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "ex_works": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-contract-ex-works",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "materials": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-contract-materials",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "labor_hours": {
+        "value": 0,
+        "unit": "hours/unit",
+        "assumption_id": "a-contract-labor-hours",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "wage": {
+        "value": 30,
+        "unit": "USD/hour",
+        "assumption_id": "a-contract-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "energy_use": {
+        "value": 5,
+        "unit": "kWh/unit",
+        "assumption_id": "a-contract-energy-use",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "energy_rate": {
+        "value": 0.09,
+        "unit": "USD/kWh",
+        "assumption_id": "a-contract-energy-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "yield": {
+        "value": 0.98,
+        "unit": "ratio",
+        "assumption_id": "a-contract-yield",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "international_freight": {
+        "value": 4,
+        "unit": "USD/unit",
+        "assumption_id": "a-contract-intl-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "domestic_freight": {
+        "value": 5,
+        "unit": "USD/unit",
+        "assumption_id": "a-contract-domestic-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "insurance_brokerage": {
+        "value": 1,
+        "unit": "USD/unit",
+        "assumption_id": "a-contract-insurance",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "duty_rate": {
+        "value": 10,
+        "unit": "percent",
+        "assumption_id": "a-contract-duty-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "customs_value": {
+        "value": 25,
+        "unit": "USD/unit",
+        "assumption_id": "a-contract-customs-value",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "specific_duty": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-contract-specific-duty",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "duty_review_date": "2026-10-01",
+      "annual_fixed": {
+        "value": 250000,
+        "unit": "USD",
+        "assumption_id": "a-contract-fixed",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "equipment": {
+        "value": 0,
+        "unit": "USD",
+        "assumption_id": "a-contract-equipment",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "tooling": {
+        "value": 300000,
+        "unit": "USD",
+        "assumption_id": "a-contract-tooling",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "setup": {
+        "value": 200000,
+        "unit": "USD",
+        "assumption_id": "a-contract-setup",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "transition": {
+        "value": 0,
+        "unit": "USD",
+        "assumption_id": "a-contract-transition",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capital_year": 0,
+      "quote": {
+        "value": 92,
+        "unit": "USD/unit",
+        "assumption_id": "a-contract-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 10000,
+        "unit": "units",
+        "assumption_id": "a-contract-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 30,
+        "unit": "days",
+        "assumption_id": "a-contract-lead-time",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "inventory_days": {
+        "value": 35,
+        "unit": "days",
+        "assumption_id": "a-contract-inventory-days",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "carrying_rate": {
+        "value": 6,
+        "unit": "percent",
+        "assumption_id": "a-contract-carrying-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "quote_includes": {
+        "ex_works": true,
+        "materials": true,
+        "labor": true,
+        "energy": true,
+        "international_freight": true,
+        "domestic_freight": true,
+        "duty": true,
+        "overhead": true
+      },
+      "variable_basis": "per_good_unit"
+    },
+    {
+      "id": "scenario-full_manufacturing",
+      "type": "full_manufacturing",
+      "name": "Full U.S. manufacturing",
+      "launch_date": "2027-01-01",
+      "ramp": [
+        {
+          "value": 50,
+          "unit": "percent",
+          "assumption_id": "a-full_manufacturing-ramp-1",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 80,
+          "unit": "percent",
+          "assumption_id": "a-full_manufacturing-ramp-2",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-full_manufacturing-ramp-3",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-full_manufacturing-ramp-4",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        },
+        {
+          "value": 100,
+          "unit": "percent",
+          "assumption_id": "a-full_manufacturing-ramp-5",
+          "source_id": "src-demo",
+          "period": "2026 planning assumption",
+          "geography": "US"
+        }
+      ],
+      "capacity": {
+        "value": 120000,
+        "unit": "units",
+        "assumption_id": "a-full_manufacturing-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "ex_works": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-full_manufacturing-ex-works",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "materials": {
+        "value": 40,
+        "unit": "USD/unit",
+        "assumption_id": "a-full_manufacturing-materials",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "labor_hours": {
+        "value": 0.7,
+        "unit": "hours/unit",
+        "assumption_id": "a-full_manufacturing-labor-hours",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "wage": {
+        "value": 30,
+        "unit": "USD/hour",
+        "assumption_id": "a-full_manufacturing-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "energy_use": {
+        "value": 5,
+        "unit": "kWh/unit",
+        "assumption_id": "a-full_manufacturing-energy-use",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "energy_rate": {
+        "value": 0.09,
+        "unit": "USD/kWh",
+        "assumption_id": "a-full_manufacturing-energy-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "yield": {
+        "value": 0.98,
+        "unit": "ratio",
+        "assumption_id": "a-full_manufacturing-yield",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "international_freight": {
+        "value": 4,
+        "unit": "USD/unit",
+        "assumption_id": "a-full_manufacturing-intl-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "domestic_freight": {
+        "value": 5,
+        "unit": "USD/unit",
+        "assumption_id": "a-full_manufacturing-domestic-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "insurance_brokerage": {
+        "value": 1,
+        "unit": "USD/unit",
+        "assumption_id": "a-full_manufacturing-insurance",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "duty_rate": {
+        "value": 10,
+        "unit": "percent",
+        "assumption_id": "a-full_manufacturing-duty-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "customs_value": {
+        "value": 25,
+        "unit": "USD/unit",
+        "assumption_id": "a-full_manufacturing-customs-value",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "specific_duty": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-full_manufacturing-specific-duty",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "duty_review_date": "2026-10-01",
+      "annual_fixed": {
+        "value": 1200000,
+        "unit": "USD",
+        "assumption_id": "a-full_manufacturing-fixed",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "equipment": {
+        "value": 7000000,
+        "unit": "USD",
+        "assumption_id": "a-full_manufacturing-equipment",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "tooling": {
+        "value": 500000,
+        "unit": "USD",
+        "assumption_id": "a-full_manufacturing-tooling",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "setup": {
+        "value": 500000,
+        "unit": "USD",
+        "assumption_id": "a-full_manufacturing-setup",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "transition": {
+        "value": 0,
+        "unit": "USD",
+        "assumption_id": "a-full_manufacturing-transition",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capital_year": 0,
+      "quote": {
+        "value": 0,
+        "unit": "USD/unit",
+        "assumption_id": "a-full_manufacturing-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 0,
+        "unit": "units",
+        "assumption_id": "a-full_manufacturing-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-full_manufacturing-lead-time",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "inventory_days": {
+        "value": 25,
+        "unit": "days",
+        "assumption_id": "a-full_manufacturing-inventory-days",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "carrying_rate": {
+        "value": 6,
+        "unit": "percent",
+        "assumption_id": "a-full_manufacturing-carrying-rate",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "quote_includes": {
+        "ex_works": false,
+        "materials": false,
+        "labor": false,
+        "energy": false,
+        "international_freight": false,
+        "domestic_freight": false,
+        "duty": false,
+        "overhead": false
+      },
+      "variable_basis": "per_good_unit"
+    }
+  ],
+  "regions": [
+    {
+      "id": "IN-Marion",
+      "name": "Marion County · Indianapolis",
+      "state_fips": "18",
+      "county_fips": "18097",
+      "geography_level": "county",
+      "wage": {
+        "value": 29,
+        "unit": "USD/hour",
+        "assumption_id": "a-IN-Marion-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "18097"
+      },
+      "energy_rate": {
+        "value": 0.09,
+        "unit": "USD/kWh",
+        "assumption_id": "a-IN-Marion-energy",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "18097"
+      },
+      "freight": {
+        "value": 4.1,
+        "unit": "USD/unit",
+        "assumption_id": "a-IN-Marion-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "18097"
+      },
+      "workforce": {
+        "value": 5000,
+        "unit": "count",
+        "assumption_id": "a-IN-Marion-workforce",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "18097"
+      },
+      "utility": "unknown",
+      "site": "unknown"
+    },
+    {
+      "id": "IN-Allen",
+      "name": "Allen County · Fort Wayne",
+      "state_fips": "18",
+      "county_fips": "18003",
+      "geography_level": "county",
+      "wage": {
+        "value": 27,
+        "unit": "USD/hour",
+        "assumption_id": "a-IN-Allen-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "18003"
+      },
+      "energy_rate": {
+        "value": 0.085,
+        "unit": "USD/kWh",
+        "assumption_id": "a-IN-Allen-energy",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "18003"
+      },
+      "freight": {
+        "value": 4.4,
+        "unit": "USD/unit",
+        "assumption_id": "a-IN-Allen-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "18003"
+      },
+      "workforce": {
+        "value": 5000,
+        "unit": "count",
+        "assumption_id": "a-IN-Allen-workforce",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "18003"
+      },
+      "utility": "unknown",
+      "site": "unknown"
+    },
+    {
+      "id": "OH-Franklin",
+      "name": "Franklin County · Columbus",
+      "state_fips": "39",
+      "county_fips": "39049",
+      "geography_level": "county",
+      "wage": {
+        "value": 30,
+        "unit": "USD/hour",
+        "assumption_id": "a-OH-Franklin-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "39049"
+      },
+      "energy_rate": {
+        "value": 0.095,
+        "unit": "USD/kWh",
+        "assumption_id": "a-OH-Franklin-energy",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "39049"
+      },
+      "freight": {
+        "value": 4.2,
+        "unit": "USD/unit",
+        "assumption_id": "a-OH-Franklin-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "39049"
+      },
+      "workforce": {
+        "value": 5000,
+        "unit": "count",
+        "assumption_id": "a-OH-Franklin-workforce",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "39049"
+      },
+      "utility": "unknown",
+      "site": "unknown"
+    },
+    {
+      "id": "OH-Montgomery",
+      "name": "Montgomery County · Dayton",
+      "state_fips": "39",
+      "county_fips": "39113",
+      "geography_level": "county",
+      "wage": {
+        "value": 28,
+        "unit": "USD/hour",
+        "assumption_id": "a-OH-Montgomery-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "39113"
+      },
+      "energy_rate": {
+        "value": 0.09,
+        "unit": "USD/kWh",
+        "assumption_id": "a-OH-Montgomery-energy",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "39113"
+      },
+      "freight": {
+        "value": 4,
+        "unit": "USD/unit",
+        "assumption_id": "a-OH-Montgomery-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "39113"
+      },
+      "workforce": {
+        "value": 5000,
+        "unit": "count",
+        "assumption_id": "a-OH-Montgomery-workforce",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "39113"
+      },
+      "utility": "unknown",
+      "site": "unknown"
+    },
+    {
+      "id": "TX-Dallas",
+      "name": "Dallas County · Dallas",
+      "state_fips": "48",
+      "county_fips": "48113",
+      "geography_level": "county",
+      "wage": {
+        "value": 31,
+        "unit": "USD/hour",
+        "assumption_id": "a-TX-Dallas-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "48113"
+      },
+      "energy_rate": {
+        "value": 0.08,
+        "unit": "USD/kWh",
+        "assumption_id": "a-TX-Dallas-energy",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "48113"
+      },
+      "freight": {
+        "value": 5.2,
+        "unit": "USD/unit",
+        "assumption_id": "a-TX-Dallas-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "48113"
+      },
+      "workforce": {
+        "value": 5000,
+        "unit": "count",
+        "assumption_id": "a-TX-Dallas-workforce",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "48113"
+      },
+      "utility": "unknown",
+      "site": "unknown"
+    },
+    {
+      "id": "TX-Bexar",
+      "name": "Bexar County · San Antonio",
+      "state_fips": "48",
+      "county_fips": "48029",
+      "geography_level": "county",
+      "wage": {
+        "value": 28,
+        "unit": "USD/hour",
+        "assumption_id": "a-TX-Bexar-wage",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "48029"
+      },
+      "energy_rate": {
+        "value": 0.082,
+        "unit": "USD/kWh",
+        "assumption_id": "a-TX-Bexar-energy",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "48029"
+      },
+      "freight": {
+        "value": 5.8,
+        "unit": "USD/unit",
+        "assumption_id": "a-TX-Bexar-freight",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "48029"
+      },
+      "workforce": {
+        "value": 5000,
+        "unit": "count",
+        "assumption_id": "a-TX-Bexar-workforce",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "48029"
+      },
+      "utility": "unknown",
+      "site": "unknown"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "supplier-demo-1",
+      "name": "Hypothetical supplier A",
+      "component_id": "bom-01",
+      "region_id": "IN-Marion",
+      "capability": "Metal forming",
+      "origin": "US",
+      "unit_quote": {
+        "value": 10,
+        "unit": "USD/unit",
+        "assumption_id": "a-supplier-0-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 1000,
+        "unit": "units",
+        "assumption_id": "a-supplier-0-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capacity": {
+        "value": 150000,
+        "unit": "units",
+        "assumption_id": "a-supplier-0-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-supplier-0-lead",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "qualification": "unverified",
+      "evidence_ref": null
+    },
+    {
+      "id": "supplier-demo-2",
+      "name": "Hypothetical supplier B",
+      "component_id": "bom-02",
+      "region_id": "IN-Allen",
+      "capability": "Metal forming",
+      "origin": "US",
+      "unit_quote": {
+        "value": 11,
+        "unit": "USD/unit",
+        "assumption_id": "a-supplier-1-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 1000,
+        "unit": "units",
+        "assumption_id": "a-supplier-1-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capacity": {
+        "value": 150000,
+        "unit": "units",
+        "assumption_id": "a-supplier-1-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-supplier-1-lead",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "qualification": "unverified",
+      "evidence_ref": null
+    },
+    {
+      "id": "supplier-demo-3",
+      "name": "Hypothetical supplier C",
+      "component_id": "bom-03",
+      "region_id": "OH-Franklin",
+      "capability": "Assembly components",
+      "origin": "US",
+      "unit_quote": {
+        "value": 12,
+        "unit": "USD/unit",
+        "assumption_id": "a-supplier-2-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 1000,
+        "unit": "units",
+        "assumption_id": "a-supplier-2-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capacity": {
+        "value": 150000,
+        "unit": "units",
+        "assumption_id": "a-supplier-2-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-supplier-2-lead",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "qualification": "unverified",
+      "evidence_ref": null
+    },
+    {
+      "id": "supplier-demo-4",
+      "name": "Hypothetical supplier D",
+      "component_id": "bom-04",
+      "region_id": "OH-Montgomery",
+      "capability": "Assembly components",
+      "origin": "US",
+      "unit_quote": {
+        "value": 13,
+        "unit": "USD/unit",
+        "assumption_id": "a-supplier-3-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 1000,
+        "unit": "units",
+        "assumption_id": "a-supplier-3-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capacity": {
+        "value": 150000,
+        "unit": "units",
+        "assumption_id": "a-supplier-3-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-supplier-3-lead",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "qualification": "unverified",
+      "evidence_ref": null
+    },
+    {
+      "id": "supplier-demo-5",
+      "name": "Hypothetical supplier E",
+      "component_id": "bom-05",
+      "region_id": "TX-Dallas",
+      "capability": "Assembly components",
+      "origin": "US",
+      "unit_quote": {
+        "value": 14,
+        "unit": "USD/unit",
+        "assumption_id": "a-supplier-4-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 1000,
+        "unit": "units",
+        "assumption_id": "a-supplier-4-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capacity": {
+        "value": 150000,
+        "unit": "units",
+        "assumption_id": "a-supplier-4-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-supplier-4-lead",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "qualification": "unverified",
+      "evidence_ref": null
+    },
+    {
+      "id": "supplier-demo-6",
+      "name": "Hypothetical supplier F",
+      "component_id": "bom-06",
+      "region_id": "TX-Bexar",
+      "capability": "Assembly components",
+      "origin": "US",
+      "unit_quote": {
+        "value": 15,
+        "unit": "USD/unit",
+        "assumption_id": "a-supplier-5-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 1000,
+        "unit": "units",
+        "assumption_id": "a-supplier-5-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capacity": {
+        "value": 150000,
+        "unit": "units",
+        "assumption_id": "a-supplier-5-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-supplier-5-lead",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "qualification": "unverified",
+      "evidence_ref": null
+    },
+    {
+      "id": "supplier-demo-7",
+      "name": "Hypothetical supplier G",
+      "component_id": "bom-07",
+      "region_id": "IN-Marion",
+      "capability": "Assembly components",
+      "origin": "US",
+      "unit_quote": {
+        "value": 16,
+        "unit": "USD/unit",
+        "assumption_id": "a-supplier-6-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 1000,
+        "unit": "units",
+        "assumption_id": "a-supplier-6-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capacity": {
+        "value": 150000,
+        "unit": "units",
+        "assumption_id": "a-supplier-6-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-supplier-6-lead",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "qualification": "unverified",
+      "evidence_ref": null
+    },
+    {
+      "id": "supplier-demo-8",
+      "name": "Hypothetical supplier H",
+      "component_id": "bom-08",
+      "region_id": "IN-Allen",
+      "capability": "Assembly components",
+      "origin": "US",
+      "unit_quote": {
+        "value": 17,
+        "unit": "USD/unit",
+        "assumption_id": "a-supplier-7-quote",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "moq": {
+        "value": 1000,
+        "unit": "units",
+        "assumption_id": "a-supplier-7-moq",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "capacity": {
+        "value": 150000,
+        "unit": "units",
+        "assumption_id": "a-supplier-7-capacity",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "lead_time": {
+        "value": 20,
+        "unit": "days",
+        "assumption_id": "a-supplier-7-lead",
+        "source_id": "src-demo",
+        "period": "2026 planning assumption",
+        "geography": "US"
+      },
+      "qualification": "unverified",
+      "evidence_ref": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-demo",
+      "title": "Deterministic synthetic fixture v1",
+      "publisher": "Manufacturing Localization demo",
+      "url": "",
+      "retrieved_at": "2026-10-01T12:00:00.000Z",
+      "observation_period": "Hypothetical 2026 planning inputs",
+      "geography_code": "US",
+      "industry_code": "Not classified",
+      "license_note": "Synthetic demonstration data only; no customer, quote or public statistical claim.",
+      "snapshot_hash": null,
+      "status": "synthetic"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "a-budget",
+      "value": 8000000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-target-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-discount",
+      "value": 8,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-demand-1",
+      "value": 100000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-demand-2",
+      "value": 100000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-demand-3",
+      "value": 100000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-demand-4",
+      "value": 100000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-demand-5",
+      "value": 100000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-0-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-0-cost",
+      "value": 14,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-1-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-1-cost",
+      "value": 10,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-2-quantity",
+      "value": 4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-2-cost",
+      "value": 1.5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-3-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-3-cost",
+      "value": 2,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-4-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-4-cost",
+      "value": 8,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-5-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-5-cost",
+      "value": 3,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-6-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-6-cost",
+      "value": 2,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-7-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-7-cost",
+      "value": 2,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-8-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-8-cost",
+      "value": 4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-9-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-9-cost",
+      "value": 4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-10-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-10-cost",
+      "value": 0.5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-11-quantity",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-bom-11-cost",
+      "value": 3.5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-0-share",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-0-units-1",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-0-units-2",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-0-units-3",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-0-units-4",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-0-units-5",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-1-share",
+      "value": 15,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-1-units-1",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-1-units-2",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-1-units-3",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-1-units-4",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-1-units-5",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-2-share",
+      "value": 15,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-2-units-1",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-2-units-2",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-2-units-3",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-2-units-4",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-2-units-5",
+      "value": 15000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-3-share",
+      "value": 10,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-3-units-1",
+      "value": 10000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-3-units-2",
+      "value": 10000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-3-units-3",
+      "value": 10000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-3-units-4",
+      "value": 10000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-3-units-5",
+      "value": 10000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-4-share",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-4-units-1",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-4-units-2",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-4-units-3",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-4-units-4",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-4-units-5",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-5-share",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-5-units-1",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-5-units-2",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-5-units-3",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-5-units-4",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-zone-5-units-5",
+      "value": 20000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-ramp-1",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-ramp-2",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-ramp-3",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-ramp-4",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-ramp-5",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-capacity",
+      "value": 120000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-ex-works",
+      "value": 75,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-materials",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-labor-hours",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-wage",
+      "value": 30,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-energy-use",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-energy-rate",
+      "value": 0.09,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-yield",
+      "value": 0.98,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-intl-freight",
+      "value": 10,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-domestic-freight",
+      "value": 5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-insurance",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-duty-rate",
+      "value": 10,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-customs-value",
+      "value": 75,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-specific-duty",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-fixed",
+      "value": 200000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-equipment",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-tooling",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-setup",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-transition",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-quote",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-moq",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-lead-time",
+      "value": 75,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-inventory-days",
+      "value": 75,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-import-carrying-rate",
+      "value": 6,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-ramp-1",
+      "value": 50,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-ramp-2",
+      "value": 80,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-ramp-3",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-ramp-4",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-ramp-5",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-capacity",
+      "value": 120000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-ex-works",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-materials",
+      "value": 55,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-labor-hours",
+      "value": 0.4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-wage",
+      "value": 30,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-energy-use",
+      "value": 5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-energy-rate",
+      "value": 0.09,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-yield",
+      "value": 0.98,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-intl-freight",
+      "value": 4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-domestic-freight",
+      "value": 5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-insurance",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-duty-rate",
+      "value": 10,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-customs-value",
+      "value": 25,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-specific-duty",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-fixed",
+      "value": 600000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-equipment",
+      "value": 1500000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-tooling",
+      "value": 200000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-setup",
+      "value": 300000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-transition",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-quote",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-moq",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-lead-time",
+      "value": 25,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-inventory-days",
+      "value": 30,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-assembly-carrying-rate",
+      "value": 6,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-ramp-1",
+      "value": 50,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-ramp-2",
+      "value": 80,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-ramp-3",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-ramp-4",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-ramp-5",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-capacity",
+      "value": 120000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-ex-works",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-materials",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-labor-hours",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-wage",
+      "value": 30,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-energy-use",
+      "value": 5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-energy-rate",
+      "value": 0.09,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-yield",
+      "value": 0.98,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-intl-freight",
+      "value": 4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-domestic-freight",
+      "value": 5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-insurance",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-duty-rate",
+      "value": 10,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-customs-value",
+      "value": 25,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-specific-duty",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-fixed",
+      "value": 250000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-equipment",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-tooling",
+      "value": 300000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-setup",
+      "value": 200000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-transition",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-quote",
+      "value": 92,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-moq",
+      "value": 10000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-lead-time",
+      "value": 30,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-inventory-days",
+      "value": 35,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-contract-carrying-rate",
+      "value": 6,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-ramp-1",
+      "value": 50,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-ramp-2",
+      "value": 80,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-ramp-3",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-ramp-4",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-ramp-5",
+      "value": 100,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-capacity",
+      "value": 120000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-ex-works",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-materials",
+      "value": 40,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-labor-hours",
+      "value": 0.7,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-wage",
+      "value": 30,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-energy-use",
+      "value": 5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-energy-rate",
+      "value": 0.09,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-yield",
+      "value": 0.98,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-intl-freight",
+      "value": 4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-domestic-freight",
+      "value": 5,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-insurance",
+      "value": 1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-duty-rate",
+      "value": 10,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-customs-value",
+      "value": 25,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-specific-duty",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-fixed",
+      "value": 1200000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-equipment",
+      "value": 7000000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-tooling",
+      "value": 500000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-setup",
+      "value": 500000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-transition",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-quote",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-moq",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-lead-time",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-inventory-days",
+      "value": 25,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-full_manufacturing-carrying-rate",
+      "value": 6,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-IN-Marion-wage",
+      "value": 29,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-IN-Marion-energy",
+      "value": 0.09,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-IN-Marion-freight",
+      "value": 4.1,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-IN-Marion-workforce",
+      "value": 5000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-IN-Allen-wage",
+      "value": 27,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-IN-Allen-energy",
+      "value": 0.085,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-IN-Allen-freight",
+      "value": 4.4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-IN-Allen-workforce",
+      "value": 5000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-OH-Franklin-wage",
+      "value": 30,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-OH-Franklin-energy",
+      "value": 0.095,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-OH-Franklin-freight",
+      "value": 4.2,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-OH-Franklin-workforce",
+      "value": 5000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-OH-Montgomery-wage",
+      "value": 28,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-OH-Montgomery-energy",
+      "value": 0.09,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-OH-Montgomery-freight",
+      "value": 4,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-OH-Montgomery-workforce",
+      "value": 5000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-TX-Dallas-wage",
+      "value": 31,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-TX-Dallas-energy",
+      "value": 0.08,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-TX-Dallas-freight",
+      "value": 5.2,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-TX-Dallas-workforce",
+      "value": 5000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-TX-Bexar-wage",
+      "value": 28,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-TX-Bexar-energy",
+      "value": 0.082,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-TX-Bexar-freight",
+      "value": 5.8,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-TX-Bexar-workforce",
+      "value": 5000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-0-quote",
+      "value": 10,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-0-moq",
+      "value": 1000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-0-capacity",
+      "value": 150000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-0-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-1-quote",
+      "value": 11,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-1-moq",
+      "value": 1000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-1-capacity",
+      "value": 150000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-1-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-2-quote",
+      "value": 12,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-2-moq",
+      "value": 1000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-2-capacity",
+      "value": 150000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-2-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-3-quote",
+      "value": 13,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-3-moq",
+      "value": 1000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-3-capacity",
+      "value": 150000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-3-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-4-quote",
+      "value": 14,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-4-moq",
+      "value": 1000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-4-capacity",
+      "value": 150000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-4-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-5-quote",
+      "value": 15,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-5-moq",
+      "value": 1000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-5-capacity",
+      "value": 150000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-5-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-6-quote",
+      "value": 16,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-6-moq",
+      "value": 1000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-6-capacity",
+      "value": 150000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-6-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-7-quote",
+      "value": 17,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-7-moq",
+      "value": 1000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-7-capacity",
+      "value": 150000,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    },
+    {
+      "id": "a-supplier-7-lead",
+      "value": 20,
+      "low": null,
+      "high": null,
+      "rationale": "Invented demonstration input; not a quote, customer record, or verified statistic.",
+      "owner": "Demo fixture",
+      "updated_at": "2026-10-01T12:00:00.000Z",
+      "status": "synthetic"
+    }
+  ],
+  "analysis_runs": [],
+  "recommendations": [],
+  "actions": [],
+  "config": {
+    "version": "1.0.0",
+    "currency": "USD",
+    "price_year": 2026,
+    "los_weights": [
+      25,
+      25,
+      15,
+      20,
+      15
+    ],
+    "region_weights": [
+      35,
+      25,
+      20,
+      10,
+      10
+    ],
+    "labor_anchors": [
+      20,
+      45
+    ],
+    "near_tie_percent": 2
+  },
+  "imported_files": []
+}
